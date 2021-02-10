@@ -1,6 +1,9 @@
 console.log("Object Fundamentals Review")
 
-// sample object
+
+// ! ADD AND COMMIT AFTER EACH SECTION
+
+// sample album object
 const tenAlbum = {
     title: "Ten",
     artist: "Pearl Jam",
@@ -54,68 +57,56 @@ const tenAlbum = {
 }
 
 // Dot vs. Bracket Notation - accessing properties
-// USING DOT NOTATION, access the object properties and log the following message to the console:
-// "Pearl Jam's Album Ten was released on 8/27/1991"
-// OUTPUT THE SAME message to the console using bracket notation
+// TODO: USING DOT NOTATION, access the object properties (artist, title, released) and log the following message to the console using string interpolation: "Pearl Jam's Album Ten was released on 8/27/1991"
 
-// Iterate the tracks array and output the title of each song and its song length using a for loop of your choosing. The output should look like this:
-// Title: Once - Length: 232
-// Title: Even Flow - Length: 293
-// etc...
+// TODO: Output the same messge to the console using BRACKET NOTATION
 
-for (const track of tenAlbum.tracks) {
-    console.log(`Title: ${track.title} - Length: ${track.length}`)
-}
-
-
-// Iterate the tenAlbum object and log the key/value pairs to the console
+// Iterating Object keys/values
+// TODO: Iterate the tenAlbum object and log the key/value pairs to the console using a for/in loop
 // example: "title": "Ten"
-for (const key in tenAlbum) {
-    console.log(key, tenAlbum[key])
-}
+
+
+// Accessing iterable properties on objects
+// TODO: Iterate the tracks array and output the title of each song and its song length using a for loop of your choosing. The output should look something like this:
+/*
+    Title: Once - Length: 232
+    Title: Even Flow - Length: 293
+    etc.
+*/
 
 
 // OBJECT.keys() / .values() / .entries()
-const keys = Object.keys(tenAlbum)
-console.log('keys: ', keys);
+// TODO: log the keys of the tenAlbum object using Object.keys()
 
-// for (const key of Object.keys(tenAlbum)){
-// for (const value of Object.values(tenAlbum)){
-// for (const entry of Object.entries(tenAlbum)){
-for (const [key, value] of Object.entries(tenAlbum)) {
-    console.log(key, value)
-}
+// TODO: log the values of the tenAlbum object Object.values()
 
+// TODO: log the entries of the tenAlbum object Object.entries()
 
-
+// TODO: iterate the tenAlbum object and log the key/value pairs to the console using each of the above Object methods:
+// .keys()
+// .values()
+// .entries()
 
 
 
 
-
-
-
+// USING THE DATA FROM .setlists
 import { setlistsFromAPI } from './setlists.js'
 console.log('setlistsFromAPI: ', setlistsFromAPI);
+
 // USING the setlistsFromAPI data, find the event dated 20-08-2018
+// Store that event in a variable named 'event' and log event to the console
+
 // USING DOT OR BRACKET NOTATION, log the name of the band, venue, and the event date to the console
-// USING ANY OF THE WAYS TO LOOP AND ACCESS OBJECT PROPERTIES, log the name of each song from the first set of that event
-
-const event = setlistsFromAPI.setlist[2]
-const venueDate = `${event.artist.name} - ${event.venue.name} - ${event.eventDate}`
-console.log(venueDate);
-
-const headerElement = document.getElementById("header")
-const setlistElement = document.getElementById("setlist")
-headerElement.innerHTML = venueDate
 
 
-const firstSet = event.sets.set[0].song
+// Find the first set of songs of that event and store it in a variable named 'firstSet'
 
-for (const song of firstSet) {
-    console.log(song.name)
-    setlistElement.innerHTML += `<li>${song.name}</li>`
-}
+// USING ANY OF THE WAYS TO LOOP AND ACCESS OBJECT PROPERTIES - iterate the firstSet array and log the name of each song
 
-firstSet.forEach(song => console.log(song.name))
 
+// BONUS IF YOU HAVE TIME...
+// Using only properties of the event object we've previously defined
+// TODO: 1. Insert the band's name into the innerHTML of the element with the id of "header" in index.html
+
+// TODO: 2. Iterate the first set of songs for that event, create a list element for each song with the song's title and insert that new list element into the innerHTML of the element with the id of "setlist" in index.html

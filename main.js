@@ -63,11 +63,18 @@ console.log(tenAlbum.artist)
 console.log(tenAlbum.tracks)
 console.log(`${tenAlbum.artist}'s ${tenAlbum.title} was released on ${tenAlbum.released}.`)
 
+
 // TODO: Output the same messge to the console using BRACKET NOTATION
+// console.log(`${tenAlbum[artist]}`)
 
 // Iterating Object keys/values
 // TODO: Iterate the tenAlbum object and log the key/value pairs to the console using a for/in loop
 // example: "title": "Ten"
+
+for (const object in tenAlbum) {
+    console.log(object, tenAlbum[object]);
+}
+
 
 // Accessing iterable properties on objects
 // TODO: Iterate the tracks array and output the title of each song and its song length using a for loop of your choosing. The output should look something like this:
@@ -76,6 +83,18 @@ console.log(`${tenAlbum.artist}'s ${tenAlbum.title} was released on ${tenAlbum.r
     Title: Even Flow - Length: 293
     etc.
 */
+
+const tracksArray = tenAlbum["tracks"]
+console.log('tracksArray: ', tracksArray);
+
+const tracksArrayDot = tenAlbum.tracks
+console.log('tracksArrayDot: ', tracksArrayDot);
+
+for (const item of tenAlbum.tracks) {
+    console.log(`Title: ${item.title} - Length: ${item.length}`);
+}
+
+
 
 // ! ADD AND COMMIT
 

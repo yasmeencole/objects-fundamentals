@@ -61,6 +61,7 @@ console.log("Hello!")
 console.log(tenAlbum.artist)
 
 console.log(tenAlbum.tracks)
+console.log(`${tenAlbum.artist}'s ${tenAlbum.title} was released on ${tenAlbum.released}.`)
 
 // TODO: Output the same messge to the console using BRACKET NOTATION
 

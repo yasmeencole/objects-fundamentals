@@ -92,12 +92,12 @@ const tenAlbum = {
 import { setlistsFromAPI } from "./setlists.js";
 // TODO: Log 'setlistsFromAPI' to the console
 
-// TODO: USING the 'setlistsFromAPI' data, find the event dated 20-08-2018 and store that event object in a variable named 'event'
+// TODO: USING the 'setlistsFromAPI' data, find the event dated 18-08-2018 and store that event object in a variable named 'event'
 
 // TODO: log the 'event' object to the console
 
 // TODO: USING DOT OR BRACKET NOTATION AND STRING INTERPOLATION, create a string which includes the name of the band, the venue, and the date of the event and store it in a new variable clled "bandVenueDate"
-// this string should look something like "Pearl Jam - Wrigley Field - 20-08-2018"
+// this string should look something like "Pearl Jam - Wrigley Field - 18-08-2018"
 
 // TODO: log the 'bandVenueDate' string to the console
 

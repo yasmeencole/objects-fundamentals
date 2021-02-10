@@ -90,25 +90,25 @@ const tenAlbum = {
 
 // USING THE DATA FROM .setlists
 import { setlistsFromAPI } from "./setlists.js";
-console.log("setlistsFromAPI: ", setlistsFromAPI);
+// TODO: Log 'setlistsFromAPI' to the console
 
-// USING the 'setlistsFromAPI' data, find the event dated 20-08-2018 and store that event object in a variable named 'event'
+// TODO: USING the 'setlistsFromAPI' data, find the event dated 20-08-2018 and store that event object in a variable named 'event'
 
-// log the 'event' object to the console
+// TODO: log the 'event' object to the console
 
-// USING DOT OR BRACKET NOTATION AND STRING INTERPOLATION, create a string which includes the name of the band, the venue, and the date of the event and store it in a new variable clled "bandVenueDate"
+// TODO: USING DOT OR BRACKET NOTATION AND STRING INTERPOLATION, create a string which includes the name of the band, the venue, and the date of the event and store it in a new variable clled "bandVenueDate"
 // this string should look something like "Pearl Jam - Wrigley Field - 20-08-2018"
 
-// log the 'bandVenueDate' string to the console
+// TODO: log the 'bandVenueDate' string to the console
 
-// Find the first set of songs of the 'event' object and store it in a variable named 'firstSet'
+// TODO: Find the first set of songs of the 'event' object and store it in a variable named 'firstSet'
 
-// USING ANY OF THE WAYS TO LOOP AND ACCESS OBJECT PROPERTIES - iterate the firstSet array and log the name of each song
+// TODO: USING ANY OF THE WAYS TO LOOP AND ACCESS OBJECT PROPERTIES - iterate the 'firstSet' array and log the name of each song to the console
 
 // ! ADD AND COMMIT
 
 // BONUS IF YOU HAVE TIME...
 // Using only properties of the event object we've previously defined
-// TODO: 1. Insert the bandVenueDate string into the innerHTML of the element with the id of "header" in index.html
+// TODO: Insert the bandVenueDate string into the innerHTML of the element with the id of "header" in index.html
 
-// TODO: 2. Iterate the first set of songs for that event, create a list element for each song with the song's title and insert that new list element into the innerHTML of the element with the id of "setlist" in index.html
+// TODO: Iterate the first set of songs for that event, create a list element for each song with the song's title and insert that new list element into the innerHTML of the element with the id of "setlist" in index.html

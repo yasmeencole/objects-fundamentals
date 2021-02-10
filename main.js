@@ -100,15 +100,31 @@ for (const item of tenAlbum.tracks) {
 
 // OBJECT.keys() / .values() / .entries()
 // TODO: log the keys of the tenAlbum object using Object.keys()
+// console.log("Object.keys()", Object.keys(tenAlbum));
+
 
 // TODO: log the values of the tenAlbum object Object.values()
+// console.log("Object.value()", Object.values(tenAlbum));
 
 // TODO: log the entries of the tenAlbum object Object.entries()
+console.log("Object.entries()", Object.entries(tenAlbum)) ;
 
 // TODO: iterate the tenAlbum object and log the key/value pairs to the console using each of the above Object methods:
 // .keys()
+for (let key of Object.keys(tenAlbum)) {
+    console.log(key, tenAlbum[key]);
+
+}
 // .values()
+for (let value of Object.values(tenAlbum)) {
+    const key = Object.keys(tenAlbum).find(key => tenAlbum[key] === value) 
+    console.log(`Key: ${key} - Value: ${value}`)
+}
+
 // .entries()
+for (let [key, value] of Object.entries(tenAlbum)) {
+    console.log(`Key: ${key} Value: ${value}`)
+}
 
 // ! ADD AND COMMIT
 

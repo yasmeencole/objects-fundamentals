@@ -57,12 +57,24 @@ const tenAlbum = {
 
 // Dot vs. Bracket Notation - accessing properties
 // TODO: USING DOT NOTATION, access the object properties (artist, title, released) and log the following message to the console using string interpolation: "Pearl Jam's Album Ten was released on 8/27/1991"
+console.log("Hello!")
+console.log(tenAlbum.artist)
+
+console.log(tenAlbum.tracks)
+console.log(`${tenAlbum.artist}'s ${tenAlbum.title} was released on ${tenAlbum.released}.`)
+
 
 // TODO: Output the same messge to the console using BRACKET NOTATION
+// console.log(`${tenAlbum[artist]}`)
 
 // Iterating Object keys/values
 // TODO: Iterate the tenAlbum object and log the key/value pairs to the console using a for/in loop
 // example: "title": "Ten"
+
+for (const object in tenAlbum) {
+    console.log(object, tenAlbum[object]);
+}
+
 
 // Accessing iterable properties on objects
 // TODO: Iterate the tracks array and output the title of each song and its song length using a for loop of your choosing. The output should look something like this:
@@ -72,19 +84,47 @@ const tenAlbum = {
     etc.
 */
 
+const tracksArray = tenAlbum["tracks"]
+console.log('tracksArray: ', tracksArray);
+
+const tracksArrayDot = tenAlbum.tracks
+console.log('tracksArrayDot: ', tracksArrayDot);
+
+for (const item of tenAlbum.tracks) {
+    console.log(`Title: ${item.title} - Length: ${item.length}`);
+}
+
+
+
 // ! ADD AND COMMIT
 
 // OBJECT.keys() / .values() / .entries()
 // TODO: log the keys of the tenAlbum object using Object.keys()
+// console.log("Object.keys()", Object.keys(tenAlbum));
+
 
 // TODO: log the values of the tenAlbum object Object.values()
+// console.log("Object.value()", Object.values(tenAlbum));
 
 // TODO: log the entries of the tenAlbum object Object.entries()
+console.log("Object.entries()", Object.entries(tenAlbum)) ;
 
 // TODO: iterate the tenAlbum object and log the key/value pairs to the console using each of the above Object methods:
 // .keys()
+for (let key of Object.keys(tenAlbum)) {
+    console.log(key, tenAlbum[key]);
+
+}
 // .values()
+for (let value of Object.values(tenAlbum)) {
+    const key = Object.keys(tenAlbum).find(key => tenAlbum[key] === value) 
+    console.log(`Key: ${key} - Value: ${value}`)
+}
+
 // .entries()
+for (let [key, value] of Object.entries(tenAlbum)) {
+    console.log(`Key: ${key} Value: ${value}`)
+}
 
 // ! ADD AND COMMIT
 

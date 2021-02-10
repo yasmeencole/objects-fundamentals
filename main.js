@@ -4,55 +4,55 @@ console.log("Object Fundamentals Review");
 
 // sample album object
 const tenAlbum = {
-  title: "Ten",
-  artist: "Pearl Jam",
-  released: "8/27/1991",
-  tracks: [
-    {
-      title: "Once",
-      length: 232,
-    },
-    {
-      title: "Even Flow",
-      length: 293,
-    },
-    {
-      title: "Alive",
-      length: 341,
-    },
-    {
-      title: "Why Go",
-      length: 200,
-    },
-    {
-      title: "Black",
-      length: 344,
-    },
-    {
-      title: "Jeremy",
-      length: 319,
-    },
-    {
-      title: "Oceans",
-      length: 162,
-    },
-    {
-      title: "Porch",
-      length: 211,
-    },
-    {
-      title: "Garden",
-      length: 299,
-    },
-    {
-      title: "Deep",
-      length: 258,
-    },
-    {
-      title: "Release",
-      length: 543,
-    },
-  ],
+    title: "Ten",
+    artist: "Pearl Jam",
+    released: "8/27/1991",
+    tracks: [
+        {
+            title: "Once",
+            length: 232
+        },
+        {
+            title: "Even Flow",
+            length: 293
+        },
+        {
+            title: "Alive",
+            length: 341
+        },
+        {
+            title: "Why Go",
+            length: 200
+        },
+        {
+            title: "Black",
+            length: 344
+        },
+        {
+            title: "Jeremy",
+            length: 319
+        },
+        {
+            title: "Oceans",
+            length: 162
+        },
+        {
+            title: "Porch",
+            length: 211
+        },
+        {
+            title: "Garden",
+            length: 299
+        },
+        {
+            title: "Deep",
+            length: 258
+        },
+        {
+            title: "Release",
+            length: 543
+        }
+    ]
 };
 
 // Dot vs. Bracket Notation - accessing properties
